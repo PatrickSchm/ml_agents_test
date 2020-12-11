@@ -7,7 +7,8 @@ import tensorflow as tf
 import datetime
 from tensorflow import keras
 from collections import deque
-import numpy as np
+import numpy as npll
+
 from mlagents_envs.environment import UnityEnvironment
 from mlagents_envs.side_channel.engine_configuration_channel import EngineConfigurationChannel
 
