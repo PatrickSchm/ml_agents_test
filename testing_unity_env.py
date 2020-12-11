@@ -87,7 +87,7 @@ def training_step(train_loss,train_accuracy,model, target, loss_fn, optimizer, d
 
 def train_roller():
     play_mode = False
-    load_model = True
+    load_model = False
     dueling_network = True
 
     input_shape = [4]
