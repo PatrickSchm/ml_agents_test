@@ -114,7 +114,7 @@ def train_roller():
 
     # This is a non-blocking call that only loads the environment.
     channel = EngineConfigurationChannel()
-    env = UnityEnvironment(file_name=None, seed=1, side_channels=[channel])
+    env = UnityEnvironment(file_name='test', seed=1, side_channels=[channel])
     channel.set_configuration_parameters(time_scale=100.0)
     env.step()
     env.set_actions("RollerBall?team=0", np.array([np.random.rand(2)]))
